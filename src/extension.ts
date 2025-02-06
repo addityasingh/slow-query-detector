@@ -84,7 +84,7 @@ export function activate(context: vscode.ExtensionContext) {
             const issues = detectSlowQueries(query);
 
             if (issues.length > 0) {
-                vscode.window.showWarningMessage(`Detected potential issues:\n- ${issues.join('\n- ')}`);
+                vscode.window.showWarningMessage(`Detected potential issues:\n - ${issues.join('\n - ')}`);
             } else {
                 vscode.window.showInformationMessage('No slow query patterns detected.');
             }
